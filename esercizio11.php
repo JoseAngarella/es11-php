@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+
+    <?php
+         $linkBase="https://xkcd.com";
+         $numLink=rand(2,5);
+         for($i=1; $i<=$numLink; $i++){
+            $link=$linkBase . "/$i";
+            echo "<p><a href='$link'>Pagina $i</a></p>";
+         }
+
+    ?>
     
 </body>
 </html>
